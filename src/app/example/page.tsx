@@ -1,6 +1,7 @@
 'use client'
 
 import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Button } from '@/components/ui/button'
@@ -37,7 +38,8 @@ export default function ExamplePage() {
   function onSubmit(values: FormValues) {
     // 제출된 값을 콘솔에 출력 (실제 앱에서는 API 호출 등으로 대체)
     console.log('제출된 값:', values)
-    alert(`제출 완료!\n이름: ${values.name}\n이메일: ${values.email}`)
+    toast.success(`제출 완료! 이름: ${values.name}`)
+    form.reset()
   }
 
   return (
