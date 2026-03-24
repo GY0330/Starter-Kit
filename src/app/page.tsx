@@ -7,7 +7,7 @@ export default function Home() {
       <div className='text-center'>
         <h1 className='text-4xl font-bold tracking-tight'>Starter Kit</h1>
         <p className='mt-3 text-lg text-muted-foreground'>
-          Next.js 15 · TypeScript · Tailwind CSS v4 · shadcn/ui
+          Next.js 16 · TypeScript · Tailwind CSS v4 · shadcn/ui
         </p>
       </div>
 
